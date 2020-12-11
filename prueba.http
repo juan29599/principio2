@@ -1,0 +1,26 @@
+### prueba
+GET http://localhost:8000/usuarios
+###agragar post
+POST http://localhost:8000/usuarios
+Content-Type: application/json
+
+{
+    "nombre":"hola22",
+    "email":"juanzuniga9@gmail.com",
+    "celular":"6361158986",
+    "pais":"mexico",
+    "ciudad":"ncg",
+    "password":"123"
+}
+###eliminar
+DELETE http://localhost:8000/usuarios/1
+###actualizar
+PUT http://localhost:8000/usuarios/1
+Content-Type: application/json
+
+{
+    "nombre":"juan",
+    "email":"zuniga11"
+}
+###enviarEmail
+GET http://localhost:8000/enviaremail
